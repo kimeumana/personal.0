@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #ffffff; /* White background for light theme */
+  --text-color: #000000; /* Black text for light theme */
+  --nav-bg-color: #3498db; /* Sky blue background for navigation */
+  --nav-text-color: white; /* White text for navigation */
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212; /* Dark background for dark theme */
+  --text-color: #eeeeee; /* Light text for dark theme */
+  --nav-bg-color: #444; /* Dark background for navigation in dark theme */
+  --nav-text-color: white; /* White text for navigation in dark theme */
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  background: var(--nav-bg-color);
+  color: var(--nav-text-color);
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2rem;
+}
+
+#home {
+  background-image: url('WhatsApp Image 2025-04-09 at 10.38.16_dcc52066.jpg');
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: white; /* Change text color for better contrast */
+  padding: 100px 20px; /* Add padding for spacing */
+}
+
+#about {
+  background-color: #f9f9f9; /* Optional: Set a background color for the about section */
+  padding: 20px; /* Add padding for spacing */
+}
+
+#about img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#projects, #blog, #contact {
+  background-color: #f9f9f9; /* Light background for other sections */
+  padding: 20px; /* Add padding for spacing */
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--nav-bg-color);
+  color: var(--nav-text-color);
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
