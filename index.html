@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><button id="theme-toggle">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to My Website</h1>
+      <p id="greeting"></p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="WhatsApp Image 2025-04-09 at 10.38.16_dcc52066.jpg" alt="Description of the image">
+      <p>I am a full-time student at United States International University pursuing a bachelor's degree in Applied Computer Technology.</p>
+      <p>I am also an alumni of KCA University class of 2022.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div>
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('data')">Data</button>
+      </div>
+      <div id="project-list"></div>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <input type="text" id="search-blog" placeholder="Search blog..." />
+      <div id="blog-list"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Personal Website</p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="blog.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
